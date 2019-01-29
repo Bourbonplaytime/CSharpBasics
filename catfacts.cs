@@ -77,8 +77,9 @@ namespace Catbot9001
             }
             else
             {
-              Console.Write("*hiss* You are a monster!!! Y u wanna kill a cat doe? \n");
-              notEnoughCats = false;
+              Console.Write("*hiss* You are a monster!!! Y u wanna kill a cat doe? \n You must need cats to cheer you up! \n");
+
+              differenceInCats += 10;
             }
           keepBreeding = false;
           }
