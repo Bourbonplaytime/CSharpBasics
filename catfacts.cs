@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 
 namespace Catbot9001
 {
@@ -6,6 +7,16 @@ namespace Catbot9001
   {
     static void Main()
     {
+      using (StreamReader sr = new StreamReader("cat-facts.json"))
+      {
+      var line = sr.ReadToEnd();
+      string[] fileLines = line.Split(new char[] { '\r', '\n' });
+      //foreach(var item in fileLines)
+      //{
+      //  Console.WriteLine(item);
+      //}
+      }
+
       int numberOfCats = 1;
 
       string firstCat = "Whiskey";
